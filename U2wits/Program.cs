@@ -1,52 +1,4 @@
-﻿//using System;
-//using System.Threading;
-
-//public class Unipro
-//{
-//    public void Read()
-//    {
-//        while (true)
-//        {
-//            Console.WriteLine("Unipro.Read is running in its own thread.");
-//            Thread.Sleep(100);
-//        }
-//    }
-//};
-
-//public class Wits
-//{
-//    public void Write()
-//    {
-//        while (true)
-//        {
-//            Console.WriteLine("Wits.Write is running in its own thread.");
-//            Thread.Sleep(1000);
-//        }
-//    }
-//};
-
-//public class Simple
-//{
-//    public static int Main()
-//    {
-//        Console.WriteLine("Thread Start/Stop/Join Sample");
-
-//        Unipro oUnipro = new Unipro();
-//        Wits oWits = new Wits();
-
-//        Thread uThread = new Thread(new ThreadStart(oUnipro.Read));
-//        Thread wThread = new Thread(new ThreadStart(oWits.Write));
-
-//        uThread.Start();
-//        wThread.Start();
-
-//        Thread.Sleep(10);
-//        return 0;
-//    }
-//}
-
-
- using System;
+﻿ using System;
 using System.IO;
 using System.IO.Ports;
 using System.Threading;
@@ -411,10 +363,7 @@ public static string SetFotter()
 
 #region -- Configuration Class --
 /// <summary>
-/// This Configuration class is basically just a set of 
-/// properties with a couple of static methods to manage
-/// the serialization to and deserialization from a
-/// simple XML file.
+/// static methods to manage the serialization to and deserialization from a simple XML file.
 /// </summary>
 [Serializable]
 public class Configuration
